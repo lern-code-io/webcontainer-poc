@@ -65,7 +65,12 @@
               "buildTarget": "webcontainer-poc:build:production"
             },
             "development": {
-              "buildTarget": "webcontainer-poc:build:development"
+              "buildTarget": "webcontainer-poc:build:development",
+              "headers": {
+                "Cross-Origin-Opener-Policy": "same-origin",
+                "Cross-Origin-Embedder-Policy": "require-corp",
+                "Cross-Origin-Resource-Policy": "cross-origin"
+              }
             }
           },
           "defaultConfiguration": "development"
